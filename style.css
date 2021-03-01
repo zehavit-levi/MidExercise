@@ -10,7 +10,7 @@ body{
     display: flex;
 }
 .col{
-   flex: 1;
+    flex: 1;
 }
 .read-more{
     text-align: left;
@@ -20,6 +20,11 @@ body{
 }
 .dropdown::before{
     content: url(images/menu_sep.png);
+    display: block;
+    float: right;
+}
+.footer-nav>ul > li > a::before{
+    content: "|";
     display: block;
     float: right;
 }
@@ -67,6 +72,14 @@ nav > ul > li > a{
     display: block;
     text-decoration: none;
 }
+
+.sides > a, .down>.col>a{
+    display: block;
+}
 .dropdown-content > a:hover{
     text-decoration: underline;
+}
+
+.down > .col{
+    background: url(images/small_cube_bg.png);
 }
