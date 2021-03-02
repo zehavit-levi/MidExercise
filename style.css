@@ -8,6 +8,9 @@ body{
 *{
     box-sizing: border-box;
 }
+main{
+    padding-top: 20px;
+}
 .nav-line{
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +31,8 @@ body{
 }
 footer{
     width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 .row{
@@ -35,6 +40,7 @@ footer{
 }
 .col{
     flex: 1;
+    border-top: 10px solid white;
 }
 .read-more{
     text-align: left;
@@ -60,6 +66,10 @@ footer{
 .footer-nav>ul > li:last-child > a{
     color: red;
 }
+.footer-nav>ul > li > a{
+    font-size: 0.875em;
+}
+
 
 .dropdown-content {
     position: absolute;
@@ -73,9 +83,7 @@ footer{
 .dropdown:hover > .dropdown-content {
     display: block;
 }
-footer{
-    position: fixed;
-}
+
 
 ul{
     list-style: none;
@@ -86,12 +94,10 @@ ul{
     flex-wrap: wrap;
     align-items: center;
 }
-.header-nav >ul >li{
+nav >ul >li{
     flex-grow: 1;
 }
-.footer-nav>ul>li{
-    flex-grow: 1;
-}
+
 .header-nav{
     display: flex;
     width: 80%;
@@ -99,6 +105,7 @@ ul{
 
 .footer-nav>ul{
     padding-bottom: 0;
+    padding-top: 10px;
 }
 
 nav > ul > li > a{
@@ -116,8 +123,8 @@ nav > ul > li > a{
 #paz_logo{
     position: relative;
     top: -10px;
-    right: 0px;
 }
+
 
 .container {
     width: 900px;
@@ -146,7 +153,9 @@ nav > ul > li > a{
 }
 .search > input{
     width: 126px;
-    background: url(images/search_input.png); 
+    border: none;
+      border:solid 1px #ccc;
+      border-radius: 0 10px 0 0;
 }
 
 .dropdown-content > a{
@@ -156,7 +165,6 @@ nav > ul > li > a{
     font-size: 0.95em;
     font-weight: bold;
     padding: 5px;
-    /* padding-right: 5px; */
 }
 
 .sides > a, .down>.col>a{
@@ -174,3 +182,48 @@ nav > ul > li > a{
     border-top: 0.9px solid #acacac;
     width: 100%;
 } 
+
+.up > img{
+    border-radius:0 0 15px 0;
+}
+.up{
+    position: relative;
+    
+}
+
+.up > div{
+    width: 248px;
+    height: 97px;
+    position: absolute;
+    background-image: url("images/hp_tab_text_bg.png");
+    bottom: 10px;
+    border-radius:0 0 15px 0;
+    right: 10px;
+    color: white;
+}
+.up > div > h3{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+.up > div > p{
+    font-size: 0.8125em;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.up > div > .read-more{
+    color: white;
+    font-size:  0.8125em;
+    padding-right: 180px;
+}
+
+.up > div > .read-more::after{
+    content: url(images/read_more_white.png);
+    padding-right: 5px ;
+}
