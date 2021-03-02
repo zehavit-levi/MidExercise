@@ -8,15 +8,13 @@ body{
 *{
     box-sizing: border-box;
 }
-main{
-    padding-top: 20px;
-}
+
+/*Header*/
 .nav-line{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-
 .nav-line > a{
     display: block;
     padding-left: 10px;
@@ -25,29 +23,12 @@ main{
     background: linear-gradient(#909090 85%,#aaaaaa );
     height: 105px;
 }
-.footer{
-    background: linear-gradient(#dfdfdf , #909090 99%) ;
-    height: 38px;
-}
-footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-.row{
+.header-nav{
     display: flex;
-}
-.col{
-    flex: 1;
-    border-top: 10px solid white;
-}
-.read-more{
-    text-align: left;
+    width: 80%;
 }
 .dropdown {
     position: relative;
-    /* padding-bottom: 10px; */
 }
 .dropdown::before{
     content: url(images/menu_sep.png);
@@ -55,22 +36,6 @@ footer{
     float: right;
     width: 4px;
 }
-.footer-nav>ul > li:not(:first-child) > a::before{
-    content: "|";
-    display: block;
-    float: right;
-    color: white;
-    padding-right: 2px;
-    padding-left: 2px;
-}
-.footer-nav>ul > li:last-child > a{
-    color: red;
-}
-.footer-nav>ul > li > a{
-    font-size: 0.875em;
-}
-
-
 .dropdown-content {
     position: absolute;
     width: max-content;
@@ -79,38 +44,7 @@ footer{
     padding-top: 10px;
     right: 15px;
 }
-
 .dropdown:hover > .dropdown-content {
-    display: block;
-}
-
-
-ul{
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-}
-nav >ul >li{
-    flex-grow: 1;
-}
-
-.header-nav{
-    display: flex;
-    width: 80%;
-}
-
-.footer-nav>ul{
-    padding-bottom: 0;
-    padding-top: 10px;
-}
-
-nav > ul > li > a{
-    text-decoration: none;
-    color: white;
     display: block;
 }
 .header-nav >ul >li>a{
@@ -118,18 +52,9 @@ nav > ul > li > a{
     font-weight: bold;
     text-align: center;
 }
-
-
 #paz_logo{
     position: relative;
     top: -10px;
-}
-
-
-.container {
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .search{
     width: 100%;
@@ -157,7 +82,6 @@ nav > ul > li > a{
       border:solid 1px #ccc;
       border-radius: 0 10px 0 0;
 }
-
 .dropdown-content > a{
     display: block;
     text-decoration: none;
@@ -166,31 +90,38 @@ nav > ul > li > a{
     font-weight: bold;
     padding: 5px;
 }
-
-.sides > a, .down>.col>a{
-    display: block;
-}
-.dropdown-content > a:hover, .dropdown > a:hover, .footer-nav>ul > li > a:hover, .search > a:first-child:hover{
-    text-decoration: underline;
-    color: #005ca0;
-}
-.down > .col{
-    background: url(images/small_cube_bg.png);
-}
-
 .divider{
     border-top: 0.9px solid #acacac;
     width: 100%;
 } 
-
+/*Main*/
+main{
+    padding-top: 20px;
+}
+.row{
+    display: flex;
+}
+.col{
+    flex: 1;
+    border-top: 10px solid white;
+}
+.read-more{
+    text-align: left;
+}
+.container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sides > a, .down>.col>a{
+    display: block;
+}
 .up > img{
     border-radius:0 0 15px 0;
 }
 .up{
     position: relative;
-    
 }
-
 .up > div{
     width: 248px;
     height: 97px;
@@ -216,14 +147,66 @@ nav > ul > li > a{
     padding-right: 10px;
     padding-left: 10px;
 }
-
 .up > div > .read-more{
     color: white;
     font-size:  0.8125em;
     padding-right: 180px;
 }
-
 .up > div > .read-more::after{
     content: url(images/read_more_white.png);
     padding-right: 5px ;
+}
+
+/*Footer*/
+.footer{
+    background: linear-gradient(#dfdfdf , #909090 99%) ;
+    height: 38px;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.footer-nav>ul > li:not(:first-child) > a::before{
+    content: "|";
+    display: block;
+    float: right;
+    color: white;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.footer-nav>ul > li:last-child > a{
+    color: red;
+}
+.footer-nav>ul > li > a{
+    font-size: 0.875em;
+}
+.footer-nav>ul{
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+
+
+/*General*/
+ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav >ul >li{
+    flex-grow: 1;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.dropdown-content > a:hover, .dropdown > a:hover, .footer-nav>ul > li > a:hover, .search > a:first-child:hover{
+    text-decoration: underline;
+    color: #005ca0;
 }
