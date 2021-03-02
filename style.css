@@ -79,8 +79,8 @@ body{
 .search > input{
     width: 126px;
     border: none;
-      border:solid 1px #ccc;
-      border-radius: 0 10px 0 0;
+    border:solid 1px #ccc;
+    border-radius: 0 10px 0 0;
 }
 .dropdown-content > a{
     display: block;
@@ -128,7 +128,7 @@ main{
     position: absolute;
     background-image: url("images/hp_tab_text_bg.png");
     bottom: 10px;
-    border-radius:0 0 15px 0;
+    border-radius:0 0 25px 0;
     right: 10px;
     color: white;
 }
@@ -156,10 +156,60 @@ main{
     content: url(images/read_more_white.png);
     padding-right: 5px ;
 }
+.down{
+    margin-top: 18px;
+}
+.down > .col{
+    position: relative;
+}
+.down > .col > div{
+   position: absolute;
+   top: 0;
+   padding-right: 20px;
+}
+.down > img{
+    border-radius: 0 25px 0 0;
+}
+.down > .col > div> h3{
+    margin: 0;
+    font-size: 0.875em;
+    font-weight: bold;
+    color:#575757;
+    height: 34px;
+    line-height: 34px;
+    padding-right:4px ;
+}
+
+.down > .col > div>img{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.down > .col > div > .read-more{
+    color: #575757;
+    font-size:  0.8125em;
+    padding-right: 150px;
+}
+.down > .col> div > .read-more::after, .sides > a::after{
+    content: url(images/read_more_yellow.png);
+    padding-right: 5px ;
+}
+.sides{
+    flex:1.7;
+}
+.sides > a{
+    color:  #575757;
+    font-size: 0.8125em;
+    padding-top: 10px;
+}
+.down > .col > div {
+    width: 100%;
+    padding-left: 10px;
+}
+
 
 /*Footer*/
 .footer{
-    background: linear-gradient(#dfdfdf , #909090 99%) ;
+    background: linear-gradient(#dfdfdf , #909090 90%) ;
     height: 38px;
 }
 footer{
