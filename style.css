@@ -319,7 +319,6 @@ nav > ul > li > a{
     border-color: #ccc;
     border-width: 1px;
     border-radius: 0 25px 0 0;
-    /* width: 100%; */
   }
   form {
       padding-right:18px;
@@ -334,9 +333,6 @@ nav > ul > li > a{
       
   }
   .contact > .row > .col > .row > .col{
-      /* width: 292px;
-      height: 175px;
-      padding: 18px 22px 15px; */
       position: relative;
   }
   .contact > .row > .col > .row > .col > div{
