@@ -103,7 +103,7 @@
     </header>
     <main class="container contact">
         <div class="row">
-            <div class="col">
+            <div class="col up-contact">
                 <div class="side-link">
                     <div class="arrow-left"></div>
                     <a href="">צור קשר</a>
@@ -114,56 +114,67 @@
         </div>
         <div class="row">
             <div class="col">
-<h1></h1>
-<div>
-    <img src="images/header_bg.png" alt="">
-    <form action="">
-        <h1></h1>
-        <p></p>
-        <p></p>
-        <div>
-            <label for=""></label>
-            <input type="text">
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="text">
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="text">
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="text">
-        </div>
-        <div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-    </form>
-</div>
+                <h1>צור קשר</h1>
+                <div class="form-div">
+                    <form action="">
+                        <h1>צור קשר</h1>
+                        <p><b>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</b></p>
+                        <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
+                        <div>
+                            <label for="fname">* שם פרטי</label>
+                            <input id="fname" type="text" required>
+                        </div>
+                        <div>
+                            <label for="lname">* שם משפחה</label>
+                            <input id="lname" type="text" required>
+                        </div>
+                        <div>
+                            <label for="">* טלפון</label>
+                            <input type="text"
+                                pattern="^\+?(972|0)(\-)?0?(([23489]{1}\d{7})|([71,72,73,74,75,76,77]{2}\d{7})|[5]{1}\d{8})$"
+                                required>
+                        </div>
+                        <div>
+                            <label for="email">* E-mail</label>
+                            <input id="email" type="email" required>
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="20" rows="3" placeholder="תוכן הפנייה"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"><img src="images/" alt="">שלח</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img src="images/header_bg.png" alt="">
-                        <h1></h1>
-                        <p>
-                            <strong></strong><br>
-                            
-                        </p>
+                        <img src="images/cube_bg.png" alt="">
+                        <div>
+                            <h1>פרטי יצירת קשר</h1>
+                            <p>
+                                <b>פז חברת נפט בע"מ</b><br>
+                                יורו פארק, בניין הולנד<br>
+                                קיבוץ יקום 60972<br>
+                                טל. שירות לקוחות 1-800-774-774<br>
+                                פקס.09-8641714<br>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img src="images/header_bg.png" alt="">
-                        <h1></h1>
-                        <p>
-                            <strong></strong>
-                            <a href=""></a>
-                            <strong></strong>
-                            <a href=""></a>
-                        </p>
+                        <img src="images/cube_bg.png" alt="">
+                        <div>
+                            <h1>עוד בפז</h1>
+                            <p>
+                                <b>ליצירת קשר עם דוברות פז</b><br>
+                                <a href="">לחצו כאן>></a><br
+                                <b>רוצים לעבוד בפז?</b><br>
+                                <a href="">לחצו כאן>></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,7 +215,7 @@
                             <a href="">שטחי מסחר</a>
                         </li>
                         <li>
-                            <a href="">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a>
+                            <a class="con-fo-lest" href="">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a>
                         </li>
                     </ul>
                 </nav>

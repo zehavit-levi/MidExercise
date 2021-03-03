@@ -264,10 +264,21 @@ nav > ul > li > a{
 }
 
 /*Contact Page Main*/
-.contact > .row > .col {
-    display: flex;
+.contact{
+    color: #72716d;
 }
-.contact > .row > .col >p{
+.contact > .row > .up-contact {
+   display: flex;
+}
+
+.contact > .row:not(:first-child) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-right: 140px;
+}
+
+.contact > .row > .col >p , .contact label{
     margin: 0;
     font-size: 0.75em;
 }
@@ -294,9 +305,6 @@ nav > ul > li > a{
     padding-right:10px ;
     font-size:  0.8125em;
 }
-
-
-
 .side-link >.arrow-left {
     width: 0; 
     height: 0; 
@@ -304,4 +312,105 @@ nav > ul > li > a{
     border-bottom: 5px solid transparent; 
     border-right:5px solid #005ca0; 
     display: inline-block;
+  }
+  form{
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 49%,#f7f7f7 51%,#ececec 100%);
+    border-style: solid solid none solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 0 25px 0 0;
+    /* width: 100%; */
+  }
+  form {
+      padding-right:18px;
+      padding-left: 16px;
+      float: right;
+      margin-left: 24px;
+  }
+  
+  .contact > .row > .col > .row{
+      padding-top: 20px;
+      padding-right: 30px;
+      
+  }
+  .contact > .row > .col > .row > .col{
+      /* width: 292px;
+      height: 175px;
+      padding: 18px 22px 15px; */
+      position: relative;
+  }
+  .contact > .row > .col > .row > .col > div{
+      position: absolute;
+      top: 5px;
+      right: 22px;
+  }
+  
+
+  .contact h1{
+      font-size: 0.9375em ;
+      color:#005ca0;
+  }
+  .contact > .row > .col >h1 {
+    border-bottom: 1px solid #ccc;
+    color: #5c5c5c;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+}
+ div > p , form > p{
+      font-size: 0.8125em;
+  }
+  form > div > input{
+    width: 160px;
+    padding: 3px;
+    border: 1px solid #808992;
+  }
+
+  textarea{
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    width: 235px;
+    height: 100px;
+    padding: 3px;
+    padding-right: 20px;
+
+  }
+  form > div{
+      display: flex;
+      padding-bottom: 5px;
+    padding-right: 20px;
+  }
+  .strong{
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  .contact label{
+    width: 75px;
+    display: block;
+  }
+  .col > p > a{
+      color: blue;
+      text-decoration: none;
+  }
+  .col > p > a:hover{
+      color: #005ca0;
+      text-decoration: underline;
+  }
+  button{
+      background: url(images/button_blue.png);
+      border: none;
+      border-radius: 0 5px 0 0 ;
+      color: white;
+      line-height: 20px;
+      cursor: pointer;
+  }
+
+  button:hover{
+    background: url(images/button_yellow.png);
+  }
+
+  form > div:last-child{
+      padding-right: 220px;
+  }
+
+  a.con-fo-lest{
+      color: white !important;
   }
